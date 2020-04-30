@@ -3,7 +3,7 @@ SECRET_KEY = os.urandom(32)
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
-AUTH0_DOMAIN = 'dev-zh0z-70m.auth0.com'
+AUTH0_DOMAIN = 'https://dev-zh0z-70m.auth0.com'
 ALGORITHMS = ['RS256']
 API_AUDIENCE = 'auth'
 
