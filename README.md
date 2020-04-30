@@ -173,7 +173,7 @@ The API will return six (6) error types when a request fails:
 Query paginated actors.
 
 ```bash
-$ curl -X GET https://udacity-fsnd-capstone-project.herokuapp.com/actors?page1
+$ curl -X GET https://UdacityCapstoneProjectFSND.herokuapp.com/actors?page1
 ```
 
 - Fetches a list of dictionaries of examples in which the keys are the ids with all available fields
@@ -210,7 +210,7 @@ $ curl -X GET https://udacity-fsnd-capstone-project.herokuapp.com/actors?page1
 If you try fetch a page which does not have any actors, you will encounter an error which looks like this:
 
 ```bash
-$ curl https://udacity-fsnd-capstone-project.herokuapp.com/actors?page123124
+$ curl https://UdacityCapstoneProjectFSND.herokuapp.com/actors?page123124
 ```
 
 and it will return:
@@ -275,7 +275,7 @@ will return
 Edit an existing Actor
 
 ```bash
-$ curl -X PATCH https://UdacityCapstoneProjectFSND.com/actors/1
+$ curl -X PATCH https://UdacityCapstoneProjectFSND.herokuapp.com/actors/1
 ```
 
 - Request Arguments: **integer** `id from actor you want to update`
