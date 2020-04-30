@@ -112,7 +112,7 @@ OK
 
 In this part of the document you can find and explore all existing endpoints, which methods can be used, how to work with them & example responses you will get. Furthermore, you can find about common error status codes, and the message that return.
 
-- **Base URL**: https://udacity-fsnd-capstone-project.herokuapp.com/
+- **Base URL**: https://UdacityCapstoneProjectFSND.herokuapp.com/
 
 - **Authentification**: Please see [API Authentification](#authentification-bearer) section for more information and details.
 
@@ -230,7 +230,7 @@ and it will return:
 Create a new actor and insert it into the database system.
 
 ```bash
-$ curl -X POST https://udacity-fsnd-capstone-project.herokuapp.com/actors
+$ curl -X POST https://UdacityCapstoneProjectFSND.herokuapp.com/actors
 ```
 
 - Request Arguments: **None**
@@ -255,7 +255,7 @@ If you try to create a new actor without a requiered field like `name`,
 and it will throw a `422` error:
 
 ```bash
-$ curl https://udacity-fsnd-capstone-project.herokuapp.com/actors?page123124
+$ curl https://UdacityCapstoneProjectFSND.herokuapp.com/actors?page123124
 ```
 
 will return
@@ -275,7 +275,7 @@ will return
 Edit an existing Actor
 
 ```bash
-$ curl -X PATCH https://udacity-fsnd-capstone-project.herokuapp.com/actors/1
+$ curl -X PATCH https://UdacityCapstoneProjectFSND.com/actors/1
 ```
 
 - Request Arguments: **integer** `id from actor you want to update`
@@ -312,7 +312,7 @@ $ curl -X PATCH https://udacity-fsnd-capstone-project.herokuapp.com/actors/1
 If you try to update an actor with an invalid id, then it will throw an `404`error:
 
 ```bash
-$ curl -X PATCH https://udacity-fsnd-capstone-project.herokuapp.com/actors/125
+$ curl -X PATCH https://UdacityCapstoneProjectFSND.herokuapp.com/actors/125
 ```
 
 will return
@@ -342,7 +342,7 @@ Additionally, trying to update an Actor with already existing field values will 
 Delete an existing Actor
 
 ```bash
-$ curl -X DELETE https://udacity-fsnd-capstone-project.herokuapp.com/actors/1
+$ curl -X DELETE https://UdacityCapstoneProjectFSND.herokuapp.com/actors/1
 ```
 
 - Request Arguments: **integer** `id from actor you want to delete`
@@ -366,7 +366,7 @@ $ curl -X DELETE https://udacity-fsnd-capstone-project.herokuapp.com/actors/1
 If you try to delete actor with an invalid id, then it will throw an `404`error:
 
 ```bash
-$ curl -X DELETE https://udacity-fsnd-capstone-project.herokuapp.com/actors/125
+$ curl -X DELETE https://UdacityCapstoneProjectFSND.herokuapp.com/actors/125
 ```
 
 It will return
@@ -386,7 +386,7 @@ It will return
 Query paginated all movies in the database system.
 
 ```bash
-$ curl https://udacity-fsnd-capstone-project.herokuapp.com/movies?page1
+$ curl https://UdacityCapstoneProjectFSND.herokuapp.com/movies?page1
 ```
 
 - Fetches a list of dictionaries of examples in which the keys are the ids with all available fields
@@ -421,7 +421,7 @@ $ curl https://udacity-fsnd-capstone-project.herokuapp.com/movies?page1
 If you try fetch a page which does not have any movies, you will encounter an error which looks like this:
 
 ```bash
-$ curl https://udacity-fsnd-capstone-project.herokuapp.com/movies?page123124
+$ curl https://UdacityCapstoneProjectFSND.herokuapp.com/movies?page123124
 ```
 
 It will return
@@ -441,7 +441,7 @@ It will return
 Create a new Movie into the database system.
 
 ```bash
-$ curl https://udacity-fsnd-capstone-project.herokuapp.com/movies
+$ curl https://UdacityCapstoneProjectFSND.herokuapp.com/movies
 ```
 
 - Request Arguments: **None**
@@ -466,7 +466,7 @@ If you try to create a new movie without a requiered field like `name`, then
 it will throw a `422` error:
 
 ```bash
-$ curl https://udacity-fsnd-capstone-project.herokuapp.com/movies?page123124
+$ curl https://UdacityCapstoneProjectFSND.herokuapp.com/movies?page123124
 ```
 
 will return
@@ -486,7 +486,7 @@ will return
 Edit an existing Movie information.
 
 ```bash
-$ curl -X PATCH https://udacity-fsnd-capstone-project.herokuapp.com/movies/1
+$ curl -X PATCH https://UdacityCapstoneProjectFSND.herokuapp.com/movies/1
 ```
 
 - Request Arguments: **integer** `id from movie you want to update`
@@ -521,7 +521,7 @@ $ curl -X PATCH https://udacity-fsnd-capstone-project.herokuapp.com/movies/1
 If you try to update an movie with an invalid id, then it will throw an `404`error:
 
 ```bash
-$ curl -X PATCH https://udacity-fsnd-capstone-project.herokuapp.com/movies/125
+$ curl -X PATCH https://UdacityCapstoneProjectFSND.herokuapp.com/movies/125
 ```
 
 It will return
@@ -551,7 +551,7 @@ Additionally, trying to update an Movie with already existing field values will 
 Delete an existing Movie.
 
 ```bash
-$ curl -X DELETE https://udacity-fsnd-capstone-project.herokuapp.com/movies/1
+$ curl -X DELETE https://UdacityCapstoneProjectFSND.herokuapp.com/movies/1
 ```
 
 - Request Arguments: **integer** `id from movie you want to delete`
@@ -575,7 +575,7 @@ $ curl -X DELETE https://udacity-fsnd-capstone-project.herokuapp.com/movies/1
 If you try to delete movie with an invalid id, then it will throw an `404`error:
 
 ```bash
-$ curl -X DELETE https://udacity-fsnd-capstone-project.herokuapp.com/movies/125
+$ curl -X DELETE https://UdacityCapstoneProjectFSND.herokuapp.com/movies/125
 ```
 
 It will return
